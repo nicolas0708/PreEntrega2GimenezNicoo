@@ -1,10 +1,10 @@
 import react from '@vitejs/plugin-react';
-import { createHtmlPlugin } from 'vite-plugin-html';  // Cambiado aquí
+import html from 'vite-plugin-html';
 
 export default {
   plugins: [
     react(),
-    createHtmlPlugin({
+    html({
       inject: {
         injectData: {
           title: 'Mi proyecto de React con Vite'
